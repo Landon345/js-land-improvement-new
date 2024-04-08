@@ -65,31 +65,16 @@
 </svelte:head>
 
 <main>
-  <div class="page-header">
-    <div class="header-text">
-      <h1>REVIEWS</h1>
-      <h3>WE'RE PROUD OF THE WORK WE'VE DONE.</h3>
+  <div class="">
+    <div class="uppercase">
+      <h1>Reviews</h1>
+      <h3>We're proud of the work we've done.</h3>
     </div>
   </div>
 
-  <div class="page-container">
+  <div class="">
     {#each quotes as quote}
       <QuoteCard quote="{quote.quote}" name="{quote.name}" />
     {/each}
   </div>
 </main>
-
-<style>
-  @media (min-width: 900px) {
-    .header-text {
-      width: 75%;
-      margin: auto;
-    }
-    .page-header h1 {
-      font-size: 80px;
-    }
-    .page-header h3 {
-      font-size: 30px;
-    }
-  }
-</style>

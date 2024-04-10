@@ -1,13 +1,9 @@
 <script lang="ts">
   import jonasStump from "../assets/jonasStump.jpg";
-  import introVideo from "../assets/intro-video.mp4";
-  import jsTeamPic from "../assets/js-team-pic.jpg";
   import demolitionPic from "../assets/demolition-pic.jpg";
   import excavationAndGradingPic from "../assets/excavation-and-grading-pic.jpg";
   import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.jpg";
   import treeServicePic from "../assets/tree-service-pic.jpg";
-  import { onMount } from "svelte";
-  import ServiceSection from "../lib/ServiceSection.svelte";
 
   interface ImgObj {
     imgsrc: string;
@@ -56,75 +52,12 @@
     "Execution",
     "Invoicing",
   ];
-  let videoPlaybackRate = 0.5;
-  let videoStartTime = 10;
-  onMount(() => {
-    const introVideo = document.getElementById(
-      "introVideo"
-    ) as HTMLVideoElement;
-    introVideo.currentTime = videoStartTime;
-    introVideo.play();
-  });
 </script>
 
 <svelte:head>
   <title>Home | JS Land Improvement</title>
 </svelte:head>
 
-<div class="relative">
-  <video
-    class="w-full h-[70vh] object-cover relative top-0 left-0 md:h-[80vh]"
-    id="introVideo"
-    width="500px"
-    height="400px"
-    controls="{true}"
-    autoplay="{true}"
-    loop="{true}"
-    bind:playbackRate="{videoPlaybackRate}"
-  >
-    <source src="{introVideo}" type="video/mp4" />
-    <track kind="captions" />
-  </video>
-  <div class="absolute top-0 w-full h-[70vh] md:h-[80vh] radial"></div>
-  <div class="absolute top-[40vh] w-full lg:top-[50vh]">
-    <div class="w-3/4 m-auto md:w-1/2">
-      <p class="uppercase text-primary font-bold">
-        We're here to serve you <i class="ri-arrow-down-s-line text-primary"
-        ></i>
-      </p>
-      <h1 class="uppercase text-primary-content">
-        Creating an amazing client experience from start to finish
-      </h1>
-    </div>
-  </div>
-</div>
-
-<section class="grid grid-cols-2 text-primary-content">
-  <p class="bg-neutral text-base-100 text-center p-6 font-bold">
-    Learn how we can improve the value and usability of your land
-  </p>
-  <a
-    class="btn btn-primary rounded-none text-lg w-full h-full md:w-3/4"
-    href="/services"
-  >
-    VIEW SERVICES
-    <i class="ri-arrow-right-circle-line text-xl ml-2"></i>
-  </a>
-</section>
-<ServiceSection
-  imageSource="{jsTeamPic}"
-  imageLabel="js-team-pic"
-  subHeader="Make it great"
-  header="Working Together for Exceptional Results"
-  paragraph="Our mission at JS Land Improvement is to improve the value of our client's land while creating an amazing experience. We prioritize quality over quantity and are committed to achieving excellence. Wether we are working for you or with you, we promise to treat you as a human and not a number."
-  bulletPoints="{[
-    '24 Hour Response Time',
-    'Free Quotes',
-    'Specialized Equipment',
-    'Satisfaction Guaranteed',
-  ]}"
-  right="{false}"
-/>
 <div class="bg-base-300 p-[40px]">
   <div class="text-center mb-6">
     <p class=" text-primary font-bold">WE'RE UP TO THE CHALLENGE</p>

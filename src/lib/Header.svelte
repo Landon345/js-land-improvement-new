@@ -3,7 +3,7 @@
   import Logo from "../assets/js-logo-bg-removed.png";
   import { onMount } from "svelte";
   import { themeChange } from "theme-change";
-  import { PHONE_NUMBER } from "./constants";
+  import { PHONE_NUMBER, Paths } from "./constants";
 
   onMount(() => {
     themeChange(false);
@@ -24,7 +24,9 @@
   <div
     class="sticky top-0 flex justify-between items-center bg-base-100 z-10 border-b-2 border-primary"
   >
-    <img src="{Logo}" alt="logo" class="w-[75px] m-1 shadow-none" />
+    <a href="{Paths.home.path}">
+      <img src="{Logo}" alt="logo" class="w-[75px] m-1 shadow-none" />
+    </a>
     <div class="flex justify-center text-primary text-xl items-center">
       <i class="ri-sun-line m-2"></i>
       <input

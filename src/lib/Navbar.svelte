@@ -20,6 +20,10 @@
     servicesOpen = !servicesOpen;
   };
   // https://gmoutdoorservices.com/
+  // demolition.path
+  // excavation and excavationAndGrading.path
+  // land clearing and forestry
+  // tree service
 </script>
 
 <MediaQuery query="(max-width: 1000px)" let:matches>
@@ -56,8 +60,8 @@
               <a
                 use:link
                 on:click="{close}"
-                class="{`${currentPage === Paths.home ? 'text-primary font-bold' : 'hover:text-primary'}`}"
-                href="{Paths.home}">Home</a
+                class="{`${currentPage === Paths.home.path ? 'text-primary font-bold' : 'hover:text-primary'}`}"
+                href="{Paths.home.path}">{Paths.home.label}</a
               >
             </li>
             <li>
@@ -65,10 +69,10 @@
               <button
                 on:click="{toggleServices}"
                 class="{`${
-                  currentPage === Paths.treeRemoval ||
-                  currentPage === Paths.brushClearing ||
-                  currentPage === Paths.grading ||
-                  currentPage === Paths.landClearing
+                  currentPage === Paths.treeService.path ||
+                  currentPage === Paths.demolition.path ||
+                  currentPage === Paths.excavationAndGrading.path ||
+                  currentPage === Paths.landClearingAndForestry.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 } ${servicesOpen ? 'text-primary' : ''}`}"
@@ -82,11 +86,11 @@
                       use:link
                       on:click="{close}"
                       class="{`list-link ${
-                        currentPage === Paths.brushClearing
+                        currentPage === Paths.demolition.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.brushClearing}">Forestry Mulching</a
+                      href="{Paths.demolition.path}">{Paths.demolition.label}</a
                     >
                   </li>
                   <li>
@@ -94,11 +98,12 @@
                       use:link
                       on:click="{close}"
                       class="{`list-link ${
-                        currentPage === Paths.grading
+                        currentPage === Paths.excavationAndGrading.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.grading}">Excavation and Grading</a
+                      href="{Paths.excavationAndGrading.path}"
+                      >{Paths.excavationAndGrading.label}</a
                     >
                   </li>
                   <li>
@@ -106,11 +111,12 @@
                       use:link
                       on:click="{close}"
                       class="{`list-link ${
-                        currentPage === Paths.landClearing
+                        currentPage === Paths.landClearingAndForestry.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.landClearing}">Land Clearing</a
+                      href="{Paths.landClearingAndForestry.path}"
+                      >Land Clearing</a
                     >
                   </li>
                   <li>
@@ -118,11 +124,11 @@
                       use:link
                       on:click="{close}"
                       class="{`list-link ${
-                        currentPage === Paths.treeRemoval
+                        currentPage === Paths.treeService.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.treeRemoval}">Tree Service</a
+                      href="{Paths.treeService.path}">Tree Service</a
                     >
                   </li>
                 </ul>
@@ -133,12 +139,12 @@
                 use:link
                 on:click="{close}"
                 class="{`list-link ${
-                  currentPage === Paths.reviews
+                  currentPage === Paths.reviews.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.reviews}"
-                aria-current="page">Reviews</a
+                href="{Paths.reviews.path}"
+                aria-current="page">{Paths.reviews.label}</a
               >
             </li>
             <li>
@@ -146,25 +152,25 @@
                 use:link
                 on:click="{close}"
                 class="{`list-link ${
-                  currentPage === Paths.aboutUs
+                  currentPage === Paths.aboutUs.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.aboutUs}">About Us</a
+                href="{Paths.aboutUs.path}">{Paths.aboutUs.label}</a
               >
             </li>
             <li>
               <a
                 use:link
                 on:click="{close}"
-                href="{Paths.contactUs}"
+                href="{Paths.contactUs.path}"
                 class="{`contact-us ${
-                  currentPage === Paths.contactUs
+                  currentPage === Paths.contactUs.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
               >
-                Contact Us
+                {Paths.contactUs.label}
               </a>
             </li>
           </ul>
@@ -177,23 +183,23 @@
         use:link
         on:click="{closeServices}"
         class="{`${
-          currentPage === Paths.home
+          currentPage === Paths.home.path
             ? 'text-primary font-bold'
             : 'hover:text-primary'
         }`}"
-        href="{Paths.home}"
+        href="{Paths.home.path}"
       >
-        Home
+        {Paths.home.label}
       </a>
       <div class="dropdown">
         <!-- svelte-ignore a11y-invalid-attribute -->
         <button
           on:click="{toggleServices}"
           class="{`${
-            currentPage === Paths.treeRemoval ||
-            currentPage === Paths.brushClearing ||
-            currentPage === Paths.grading ||
-            currentPage === Paths.landClearing
+            currentPage === Paths.treeService.path ||
+            currentPage === Paths.demolition.path ||
+            currentPage === Paths.excavationAndGrading.path ||
+            currentPage === Paths.landClearingAndForestry.path
               ? 'text-primary font-bold'
               : 'hover:text-primary'
           }`}"
@@ -211,11 +217,11 @@
                 use:link
                 on:click="{closeServices}"
                 class="{`list-link ${
-                  currentPage === Paths.brushClearing
+                  currentPage === Paths.demolition.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.brushClearing}">Forestry Mulching</a
+                href="{Paths.demolition.path}">{Paths.demolition.label}</a
               >
             </li>
             <li>
@@ -223,11 +229,12 @@
                 use:link
                 on:click="{closeServices}"
                 class="{`list-link ${
-                  currentPage === Paths.grading
+                  currentPage === Paths.excavationAndGrading.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.grading}">Excavation and Grading</a
+                href="{Paths.excavationAndGrading.path}"
+                >{Paths.excavationAndGrading.label}</a
               >
             </li>
             <li>
@@ -235,11 +242,12 @@
                 use:link
                 on:click="{closeServices}"
                 class="{`list-link ${
-                  currentPage === Paths.landClearing
+                  currentPage === Paths.landClearingAndForestry.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.landClearing}">Land Clearing</a
+                href="{Paths.landClearingAndForestry.path}"
+                >{Paths.landClearingAndForestry.label}</a
               >
             </li>
             <li>
@@ -247,11 +255,11 @@
                 use:link
                 on:click="{closeServices}"
                 class="{`list-link ${
-                  currentPage === Paths.treeRemoval
+                  currentPage === Paths.treeService.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.treeRemoval}">Tree Service</a
+                href="{Paths.treeService.path}">{Paths.treeService.label}</a
               >
             </li>
           </ul>
@@ -261,23 +269,23 @@
         use:link
         on:click="{closeServices}"
         class="{`${
-          currentPage === Paths.reviews
+          currentPage === Paths.reviews.path
             ? 'text-primary font-bold'
             : 'hover:text-primary'
         }`}"
-        href="{Paths.reviews}"
+        href="{Paths.reviews.path}"
       >
-        Reviews
+        {Paths.reviews.label}
       </a>
       <a
         use:link
         on:click="{closeServices}"
         class="{`${
-          currentPage === Paths.aboutUs
+          currentPage === Paths.aboutUs.path
             ? 'text-primary font-bold'
             : 'hover:text-primary'
         }`}"
-        href="{Paths.aboutUs}"
+        href="{Paths.aboutUs.path}"
       >
         About Us
       </a>
@@ -285,11 +293,11 @@
         use:link
         on:click="{closeServices}"
         class="{`contact-us-desktop ${
-          currentPage === Paths.contactUs
+          currentPage === Paths.contactUs.path
             ? 'text-primary font-bold'
             : 'hover:text-primary'
         }`}"
-        href="{Paths.contactUs}"
+        href="{Paths.contactUs.path}"
       >
         Contact Us
       </a>

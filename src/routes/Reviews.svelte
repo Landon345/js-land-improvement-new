@@ -1,62 +1,33 @@
 <script lang="ts">
-  import QuoteCard from "../lib/QuoteCard.svelte";
+  import review1 from "../assets/review1.png";
+  import review2 from "../assets/review2.png";
+  import review3 from "../assets/review3.png";
+  import review4 from "../assets/review4.png";
+  import review5 from "../assets/review5.png";
+  import review6 from "../assets/review6.png";
+  import review7 from "../assets/review7.png";
+  import review8 from "../assets/review8.png";
+  import review9 from "../assets/review9.png";
+  import review10 from "../assets/review10.png";
+  import review11 from "../assets/review11.png";
+  import review12 from "../assets/review12.png";
+  import review13 from "../assets/review13.png";
+  import stars from "../assets/stars.png";
 
-  interface Quote {
-    quote: string;
-    name: string;
-  }
-  const quotes: Quote[] = [
-    {
-      quote:
-        "These guys do awesome work! They were on time, listened to what I wanted done, cleaned up after themselves and left the place looking amazing! I never imagined the work they did could be done in a short amount of time, but it was done!! will definitely be using them for all future projects!",
-      name: "Alisha R.",
-    },
-    {
-      quote:
-        "Jonas is always on time, explains what is included, gives a quote and sticks to it. He completes all work in a timely manner and it always looks great. This is the second time we have used his services. He will be back many more as we have a lot to do. I have also given is name to family and friends, that’s how confident I am in the work he does.",
-      name: "Ted S.",
-    },
-    {
-      quote:
-        "Absolutely one the most proffesional and hard working young men i have had the pleasure meet and deal with. He showed up on time completed on time and came in within 10% of our budget . His work exceeded our expectations, his attention to the maps provided and the communication ongoing was second to none. I wish i could adopt him, he listens and pays attention so well. Hire this man you wont be sorry",
-      name: "Bruce H.",
-    },
-
-    {
-      quote:
-        "These guys rock! They came to my farmstead and cleaned up all the overgrown weeds this summer and gave me a lower price than agreed upon because it took less time than they figured! You will not be disappointed if you call them up.",
-      name: "Blaine S.",
-    },
-    {
-      quote:
-        "They came out and cleared about 2.5 acres of our property! We are very thankful, and my wife and I love how amazing a job they did! They were absolutely professional and very affordable!",
-      name: "Brent G.",
-    },
-    {
-      quote:
-        "I am totally happy with the workmanship, friendliness, and cost of the work I had done. Would definitely hire them again and recommend them.",
-      name: "Susan L.",
-    },
-    {
-      quote:
-        "They were on time, on budget, and great communicators. We give them an A+",
-      name: "Chad N.",
-    },
-    {
-      quote:
-        "Prompt, professional, fair pricing and work met our expectations, would recommend!",
-      name: "Kari D.",
-    },
-    {
-      quote:
-        "Jonas went above and beyond and did an amazing job! I would hire him again.",
-      name: "Barb L.",
-    },
-    {
-      quote:
-        "The Plainsmen black Powder Club of Fargo/Moorhead hired them to rebuild our trail into our shooting range, including recontouring and laying crushed asphalt. They did an awesome job. Very Courteous, quick and reasonable. You won’t go wrong hiring them. And they keep in communication! Thank you!",
-      name: "Plainsman Black Powder Club",
-    },
+  const reviews = [
+    review1,
+    review2,
+    review3,
+    review4,
+    review5,
+    review6,
+    review7,
+    review8,
+    review9,
+    review10,
+    review11,
+    review12,
+    review13,
   ];
 </script>
 
@@ -65,16 +36,22 @@
 </svelte:head>
 
 <main>
-  <div class="">
-    <div class="uppercase">
-      <h1>Reviews</h1>
-      <h3>We're proud of the work we've done.</h3>
+  <div class="bg-base-200">
+    <h3 class="text-center p-8 bg-primary text-primary-content">Our Reviews</h3>
+    <div
+      class="lg:grid lg:grid-cols-2 lg:gap-3 lg:p-10 2xl:grid-cols-3 place-items-center self-stretch"
+    >
+      {#each reviews as review}
+        <div
+          class="bg-transparent p-1 m-4 lg:m-0 md:bg-gray-50 h-full flex items-center justify-center rounded-lg"
+        >
+          <img
+            class="object-contain w-full rounded-md"
+            src="{review}"
+            alt="review"
+          />
+        </div>
+      {/each}
     </div>
-  </div>
-
-  <div class="">
-    {#each quotes as quote}
-      <QuoteCard quote="{quote.quote}" name="{quote.name}" />
-    {/each}
   </div>
 </main>

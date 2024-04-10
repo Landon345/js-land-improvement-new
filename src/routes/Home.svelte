@@ -1,6 +1,6 @@
 <script lang="ts">
   import jonasStump from "../assets/jonasStump.jpg";
-  import introVideo from "../assets/intro-video.mp4";
+  import introVideo from "../assets/JsLandImprovementIntroVidFill.mp4";
   import jsTeamPic from "../assets/js-team-pic.jpg";
   import demolitionPic from "../assets/demolition-pic.jpg";
   import excavationAndGradingPic from "../assets/excavation-and-grading-pic.jpg";

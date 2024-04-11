@@ -1,18 +1,18 @@
 <script lang="ts">
-  import review1 from "../assets/review1.png";
-  import review2 from "../assets/review2.png";
-  import review3 from "../assets/review3.png";
-  import review4 from "../assets/review4.png";
-  import review5 from "../assets/review5.png";
-  import review6 from "../assets/review6.png";
-  import review7 from "../assets/review7.png";
-  import review8 from "../assets/review8.png";
-  import review9 from "../assets/review9.png";
-  import review10 from "../assets/review10.png";
-  import review11 from "../assets/review11.png";
-  import review12 from "../assets/review12.png";
-  import review13 from "../assets/review13.png";
-  import stars from "../assets/stars.png";
+  import review1 from "../assets/review1.webp";
+  import review2 from "../assets/review2.webp";
+  import review3 from "../assets/review3.webp";
+  import review4 from "../assets/review4.webp";
+  import review5 from "../assets/review5.webp";
+  import review6 from "../assets/review6.webp";
+  import review7 from "../assets/review7.webp";
+  import review8 from "../assets/review8.webp";
+  import review9 from "../assets/review9.webp";
+  import review10 from "../assets/review10.webp";
+  import review11 from "../assets/review11.webp";
+  import review12 from "../assets/review12.webp";
+  import review13 from "../assets/review13.webp";
+  import stars from "../assets/stars.webp";
 
   const reviews = [
     review1,

@@ -1,6 +1,6 @@
 <script>
-  import treeBranchesGone from "../assets/treeBranchesGone.jpg";
-  import treeServicePic from "../assets/tree-service-pic.jpg";
+  import treeBranchesGone from "../assets/treeBranchesGone.webp";
+  import treeServicePic from "../assets/tree-service-pic.webp";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import { Paths } from "../lib/constants";
   import ServiceSection from "../lib/ServiceSection.svelte";

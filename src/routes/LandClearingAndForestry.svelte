@@ -1,9 +1,6 @@
 <script>
-  import clearingBobcat from "../assets/clearing-bobcat2.jpg";
-  import { link } from "svelte-routing";
-  import clearing1 from "../assets/clearing1.jpg";
-  import gradingSunset from "../assets/gradingSunset.jpg";
-  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.jpg";
+  import gradingSunset from "../assets/gradingSunset.webp";
+  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import { Paths } from "../lib/constants";
   import ServiceSection from "../lib/ServiceSection.svelte";

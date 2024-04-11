@@ -1,9 +1,9 @@
 <script lang="ts">
-  import jonasStump from "../assets/jonasStump.jpg";
-  import demolitionPic from "../assets/demolition-pic.jpg";
-  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.jpg";
-  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.jpg";
-  import treeServicePic from "../assets/tree-service-pic.jpg";
+  import jonasStump from "../assets/jonasStump.webp";
+  import demolitionPic from "../assets/demolition-pic.webp";
+  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.webp";
+  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
+  import treeServicePic from "../assets/tree-service-pic.webp";
 
   interface ImgObj {
     imgsrc: string;

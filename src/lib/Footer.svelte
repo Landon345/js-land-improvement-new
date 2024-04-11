@@ -1,6 +1,6 @@
 <script lang="ts">
   import { PHONE_NUMBER, EMAIL, ADDRESS, Paths } from "./constants";
-  import logo from "../assets/js-logo-bg-removed.png";
+  import logo from "../assets/js-logo-bg-removed.webp";
   const year = new Date().getFullYear();
 
   const format = (phone: string) => {

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Bobcat from "../assets/bobcat.jpg";
-  import jsTeamPic from "../assets/js-team-pic.jpg";
+  import bobcat from "../assets/bobcat.webp";
+  import jsTeamPic from "../assets/js-team-pic.webp";
   import Reviews from "./Reviews.svelte";
 </script>
 
@@ -47,7 +47,7 @@
           you or with you, we promise to treat you as a human and not a number.
         </p>
       </div>
-      <img src="{Bobcat}" alt="bobcat" class="md:w-1/2" />
+      <img src="{bobcat}" alt="bobcat" class="md:w-1/2" />
     </div>
   </div>
   <Reviews />

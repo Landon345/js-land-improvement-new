@@ -1,9 +1,9 @@
 <script>
-  import demolition from "../assets/demolition-pic.jpg";
+  import demolition from "../assets/demolition-pic.webp";
   import { Paths } from "../lib/constants";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import ServiceSection from "../lib/ServiceSection.svelte";
-  import demolitionLoading from "../assets/demolitionLoading.jpg";
+  import demolitionLoading from "../assets/demolitionLoading.webp";
 
   const applications = [
     "Mobile Homes",

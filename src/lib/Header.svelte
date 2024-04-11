@@ -1,6 +1,6 @@
 <script>
   import Navbar from "./Navbar.svelte";
-  import Logo from "../assets/js-logo-bg-removed.png";
+  import Logo from "../assets/js-logo-bg-removed.webp";
   import { onMount } from "svelte";
   import { themeChange } from "theme-change";
   import { PHONE_NUMBER, Paths } from "./constants";

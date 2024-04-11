@@ -1,11 +1,11 @@
 <script lang="ts">
-  import jonasStump from "../assets/jonasStump.jpg";
+  import jonasStump from "../assets/jonasStump.webp";
   import introVideo from "../assets/JsLandImprovementIntroVidFill.mp4";
-  import jsTeamPic from "../assets/js-team-pic.jpg";
-  import demolitionPic from "../assets/demolition-pic.jpg";
-  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.jpg";
-  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.jpg";
-  import treeServicePic from "../assets/tree-service-pic.jpg";
+  import jsTeamPic from "../assets/js-team-pic.webp";
+  import demolitionPic from "../assets/demolition-pic.webp";
+  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.webp";
+  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
+  import treeServicePic from "../assets/tree-service-pic.webp";
   import { onMount } from "svelte";
   import ServiceSection from "../lib/ServiceSection.svelte";
 

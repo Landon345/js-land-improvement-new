@@ -1,8 +1,8 @@
 <script>
-  import gradingHome from "../assets/grading-home.jpg";
+  import gradingHome from "../assets/grading-home.webp";
   import { link } from "svelte-routing";
-  import excavatorWorking from "../assets/excavatorWorking.jpg";
-  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.jpg";
+  import excavatorWorking from "../assets/excavatorWorking.webp";
+  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.webp";
   import { Paths } from "../lib/constants";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import ServiceSection from "../lib/ServiceSection.svelte";

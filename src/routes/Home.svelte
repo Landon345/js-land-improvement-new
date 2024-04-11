@@ -71,7 +71,7 @@
   <title>Home | JS Land Improvement</title>
 </svelte:head>
 
-<div class="relative">
+<!-- <div class="relative">
   <video
     class="w-full h-[70vh] object-cover relative top-0 left-0 md:h-[80vh]"
     id="introVideo"
@@ -97,7 +97,7 @@
       </h1>
     </div>
   </div>
-</div>
+</div> -->
 
 <section class="grid grid-cols-2 text-primary-content">
   <p class="bg-neutral text-base-100 text-center p-6 font-bold">

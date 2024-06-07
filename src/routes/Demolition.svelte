@@ -4,12 +4,20 @@
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import ServiceSection from "../lib/ServiceSection.svelte";
   import demolitionLoading from "../assets/demolitionLoading.webp";
+  import demolition2 from "../assets/demolition2.webp";
 
   const applications = [
     "Mobile Homes",
     "Condemned Houses",
     "Sheds",
     "Removing the Stuff That Goes With It",
+  ];
+
+  const demoEquipment = [
+    "Bobcats",
+    "Excavators",
+    "Dumpsters",
+    "Hauling Trucks",
   ];
 </script>
 
@@ -24,17 +32,17 @@
     imageLabel="{Paths.demolition.label}"
     subHeader="Demolition"
     header="We'll take care of everything — mess & all"
-    paragraph="G&M handles the entire removal process, from demolition to disposal. We even take care of the removal of furniture, trash, and materials contained within the structure. You just let us know what you need removed."
+    paragraph="Don't lift a finger! JS Land Improvement handles the entire removal process, from demolition to disposal of everything inside. We make it easy for you."
     bulletPoints="{applications}"
     right="{true}"
   />
   <ServiceSection
-    imageSource="{demolitionLoading}"
+    imageSource="{demolition2}"
     imageLabel="{Paths.demolition.label}"
     subHeader="Demolition"
-    header="We'll take care of everything — mess & all"
-    paragraph="G&M handles the entire removal process, from demolition to disposal. We even take care of the removal of furniture, trash, and materials contained within the structure. You just let us know what you need removed."
-    bulletPoints="{applications}"
+    header="Bobcats and excavators ready to tackle any demolition project"
+    paragraph="At JS Land Improvement, we're equipped with the muscle to tackle any demolition project. Our fleet boasts powerful Bobcats and excavators, allowing us to efficiently break down structures of all sizes. Whether it's a small shed or a multi-story building, our Bobcats provide the agility and maneuverability needed for precise demolition, while our excavators offer the raw power to handle even the toughest materials. With our state-of-the-art equipment and experienced operators, you can be confident that your demolition project will be completed safely and efficiently."
+    bulletPoints="{demoEquipment}"
     right="{false}"
   />
 </section>

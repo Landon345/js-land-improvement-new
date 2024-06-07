@@ -9,7 +9,7 @@
 </svelte:head>
 
 <main class="">
-  <div class="bg-base-200">
+  <div class="bg-base-100">
     <h1 class="text-center my-0 py-8 bg-primary text-primary-content">
       About us
     </h1>

@@ -36,7 +36,7 @@
 </svelte:head>
 
 <main>
-  <div class="bg-base-200">
+  <div class="bg-base-100">
     <h3 class="text-center p-8 bg-primary text-primary-content">Our Reviews</h3>
     <div
       class="lg:grid lg:grid-cols-2 lg:gap-3 lg:p-10 2xl:grid-cols-3 place-items-center self-stretch"

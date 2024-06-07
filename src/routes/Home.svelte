@@ -1,6 +1,5 @@
 <script lang="ts">
   import jonasStump from "../assets/jonasStump.webp";
-  import introVideo from "../assets/JsLandImprovementIntroVidFill.mp4";
   import jsTeamPic from "../assets/js-team-pic.webp";
   import demolitionPic from "../assets/demolition-pic.webp";
   import excavationAndGradingPic from "../assets/excavation-and-grading-pic.webp";
@@ -56,48 +55,42 @@
     "Execution",
     "Invoicing",
   ];
-  let videoPlaybackRate = 0.5;
-  let videoStartTime = 10;
-  onMount(() => {
-    const introVideo = document.getElementById(
-      "introVideo"
-    ) as HTMLVideoElement;
-    introVideo.currentTime = videoStartTime;
-    introVideo.play();
-  });
 </script>
 
 <svelte:head>
   <title>Home | JS Land Improvement</title>
 </svelte:head>
 
-<!-- <div class="relative">
-  <video
-    class="w-full h-[70vh] object-cover relative top-0 left-0 md:h-[80vh]"
+<div class="hidden lg:block relative pb-[56.25%] h-0">
+  <iframe
+    class="intro-video-embed w-full h-full"
     id="introVideo"
-    width="500px"
+    width="640px"
     height="400px"
-    controls="{true}"
-    autoplay="{true}"
-    loop="{true}"
-    bind:playbackRate="{videoPlaybackRate}"
+    src="https://www.youtube.com/embed/oZnHJS35pic?autoplay=1&controls=0&playlist=oZnHJS35pic&loop=1&disablekb=1&mute=1"
+    title="JS Land Improvement Intro Video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+  <div class="absolute top-0 w-full h-full radial"></div>
+  <div
+    class="absolute top-[10vh] md:top-[25vh] w-full lg:top-[35vh] xl:top-[50vh]"
   >
-    <source src="{introVideo}" type="video/mp4" />
-    <track kind="captions" />
-  </video>
-  <div class="absolute top-0 w-full h-[70vh] md:h-[80vh] radial"></div>
-  <div class="absolute top-[40vh] w-full lg:top-[50vh]">
     <div class="w-3/4 m-auto md:w-1/2">
-      <p class="uppercase text-primary font-bold">
+      <p class="text-base lg:text-lg uppercase text-primary font-bold">
         We're here to serve you <i class="ri-arrow-down-s-line text-primary"
         ></i>
       </p>
-      <h1 class="uppercase text-primary-content">
+      <h1
+        class="text-lg md:text-3xl lg:text-4xl uppercase text-primary-content"
+      >
         Creating an amazing client experience from start to finish
       </h1>
     </div>
   </div>
-</div> -->
+</div>
 
 <section class="grid grid-cols-2 text-primary-content">
   <p class="bg-neutral text-base-100 text-center p-6 font-bold">
@@ -239,5 +232,12 @@
   .list-number {
     @apply bg-primary text-primary-content my-2 mr-4 text-2xl h-[50px] w-[50px] flex justify-center items-center;
     background: linear-gradient(145deg, #0c9249, #035e7b);
+  }
+
+  .intro-video-embed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 </style>

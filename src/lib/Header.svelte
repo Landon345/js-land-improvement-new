@@ -28,15 +28,12 @@
       <img src="{Logo}" alt="logo" class="w-[75px] m-1 shadow-none" />
     </a>
     <div class="flex justify-center text-primary text-xl items-center">
-      <i class="ri-sun-line m-2"></i>
-      <input
-        data-toggle-theme="dark,light"
-        data-act-class="ACTIVECLASS"
-        type="checkbox"
-        class="toggle toggle-primary"
-        checked
-      />
-      <i class="ri-moon-line m-2"></i>
+      <button data-set-theme="light" data-act-class="text-secondary">
+        <i class="ri-sun-line m-2"></i>
+      </button>
+      <button data-set-theme="dark" data-act-class="text-secondary">
+        <i class="ri-moon-line m-2"></i>
+      </button>
     </div>
     <Navbar />
   </div>

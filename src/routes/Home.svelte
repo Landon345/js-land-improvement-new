@@ -162,7 +162,7 @@
       that best fits your budget and pay in easy monthly installments rather
       than all at once upfront.
     </p>
-    <div class="flex justify-around my-10 uppercase">
+    <div class="flex flex-col justify-around my-10 uppercase sm:flex-row">
       <a
         class="btn btn-outline rounded-none px-10"
         href="https://wisetack.us/#/xmwgcs1/prequalify"

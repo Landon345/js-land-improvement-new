@@ -1,11 +1,9 @@
 <script lang="ts">
   import jonasStump from "../assets/jonasStump.webp";
   import jsTeamPic from "../assets/js-team-pic.webp";
-  import demolitionPic from "../assets/demolition-pic.webp";
-  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.webp";
-  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
-  import treeServicePic from "../assets/tree-service-pic.webp";
-  import { onMount } from "svelte";
+  import demolitionLoading from "../assets/demolitionLoading.webp";
+  import pathCleared from "../assets/path-cleared.webp";
+  import manNearStump from "../assets/man-near-stump.webp";
   import ServiceSection from "../lib/ServiceSection.svelte";
 
   interface ImgObj {
@@ -17,32 +15,25 @@
   }
   const imgObjs: ImgObj[] = [
     {
-      imgsrc: demolitionPic,
-      imgalt: "demolition",
-      header: "Demolition",
-      para: "Clearing structures and debris from your land",
-      linkto: "/demolition",
+      imgsrc: manNearStump,
+      imgalt: "treeService",
+      header: "Tree Service",
+      para: "From felling large trees to maintaining your existing ones, we have you covered",
+      linkto: "/tree-service",
     },
     {
-      imgsrc: excavationAndGradingPic,
-      imgalt: "excavationAndGrading",
-      header: "Excavation and Grading",
-      para: "We'll take care of all your excavation and grading needs",
-      linkto: "/excavation-and-grading",
-    },
-    {
-      imgsrc: landClearingAndForestry,
+      imgsrc: pathCleared,
       imgalt: "landClearingAndForestry",
       header: "Land Clearing And Forestry",
       para: "We can clear any size piece of land and suite it to your needs",
       linkto: "/land-clearing-and-forestry",
     },
     {
-      imgsrc: treeServicePic,
-      imgalt: "treeService",
-      header: "Tree Service",
-      para: "From felling large trees to maintaining your existing ones, we have you covered",
-      linkto: "/tree-service",
+      imgsrc: demolitionLoading,
+      imgalt: "excavationAndDemolition",
+      header: "Excavation and Demolition",
+      para: "We'll take care of all your excavation and demolition needs",
+      linkto: "/excavation-and-demolition",
     },
   ];
   const gettingStartedSteps = [

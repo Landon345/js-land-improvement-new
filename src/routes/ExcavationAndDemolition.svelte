@@ -1,17 +1,19 @@
 <script>
-  import gradingHome from "../assets/grading-home.webp";
-  import excavatorWorking from "../assets/excavatorWorking.webp";
-  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.webp";
+  import excavatorWorking2 from "../assets/excavatorWorking2.webp";
+  import neighborhoodGradingGrass from "../assets/neighborhood-grading-grass.webp";
+  import demolitionLoading from "../assets/demolitionLoading.webp";
   import { Paths } from "../lib/constants";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import ServiceSection from "../lib/ServiceSection.svelte";
-  import gradingSunset from "../assets/gradingSunset.webp";
 
   const applications = [
-    "Sloping",
-    "Backfilling",
+    "Ditch and culvert install",
+    "Foundations",
+    "Rough Grading",
+    "Finish Grading",
     "Gravel Driveways",
-    "Fixing Drainage Issues",
+    "Building Demolition",
+    "Concrete Demolition",
   ];
   const professionalGrading = [
     "Solid foundations",
@@ -22,29 +24,28 @@
 </script>
 
 <svelte:head>
-  <title>{Paths.excavationAndGrading.label} | JS Land Improvement</title>
+  <title>{Paths.excavationAndDemolition.label} | JS Land Improvement</title>
 </svelte:head>
 
 <section class="">
   <ServiceBanner
-    src="{excavationAndGradingPic}"
-    label="{Paths.excavationAndGrading.label}"
+    src="{demolitionLoading}"
+    label="{Paths.excavationAndDemolition.label}"
   />
   <ServiceSection
-    imageSource="{excavatorWorking}"
-    imageLabel="{Paths.excavationAndGrading.label}"
-    subHeader="Excavation & Grading"
-    header="Grading and excavating done right, the first time, every time."
-    paragraph="Our team at JS Land Improvement has all the skills and equipment
-  necessary to perform any grading or excavating tasks. From driveways to
-  yards and fields, we will ensure everything drains properly and
-  withstands the test of time."
+    imageSource="{excavatorWorking2}"
+    imageLabel="{Paths.excavationAndDemolition.label}"
+    subHeader="Excavation & Demolition"
+    header="Grading and demolition done right, the first time, every time."
+    paragraph="Our team at JS Land Improvement has all the skills and equipment 
+    necessary to perform any excavation or demolition tasks. From site prep to 
+    demolishing old structures, we will ensure everything is done right."
     bulletPoints="{applications}"
     right="{true}"
   />
   <ServiceSection
-    imageSource="{gradingSunset}"
-    imageLabel="{Paths.excavationAndGrading.label}"
+    imageSource="{neighborhoodGradingGrass}"
+    imageLabel="{Paths.excavationAndDemolition.label}"
     subHeader="Excavation & Grading"
     header="Where solid foundations meet lasting results"
     paragraph="At JS Land Improvement, we understand the importance 

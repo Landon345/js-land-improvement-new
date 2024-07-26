@@ -19,13 +19,9 @@ export const Paths = {
     path: "/services",
     label: "Services",
   },
-  demolition: {
-    path: "/demolition",
-    label: "Demolition",
-  },
-  excavationAndGrading: {
-    path: "/excavation-and-grading",
-    label: "Excavation and Grading",
+  excavationAndDemolition: {
+    path: "/excavation-and-demolition",
+    label: "Excavation and Demolition",
   },
   landClearingAndForestry: {
     path: "/land-clearing-and-forestry",

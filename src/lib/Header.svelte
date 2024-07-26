@@ -12,7 +12,7 @@
 
 <header style="display: unset">
   <div
-    class="bg-primary flex justify-center text-primary-content items-center p-3 md:hidden"
+    class="bg-primary flex justify-center text-primary-content items-center p-3"
   >
     <a class="flex text-lg" href="{`tel:${PHONE_NUMBER}`}">
       <i class="ri-cellphone-fill"></i>

@@ -5,8 +5,7 @@
   import Reviews from "./routes/Reviews.svelte";
   import Footer from "./lib/Footer.svelte";
   import AboutUs from "./routes/AboutUs.svelte";
-  import Demolition from "./routes/Demolition.svelte";
-  import ExcavationAndGrading from "./routes/ExcavationAndGrading.svelte";
+  import ExcavationAndDemolition from "./routes/ExcavationAndDemolition.svelte";
   import LandClearingAndForestry from "./routes/LandClearingAndForestry.svelte";
   import TreeService from "./routes/TreeService.svelte";
   import { Paths } from "./lib/constants";
@@ -19,9 +18,8 @@
     <Header />
     <Route path="{Paths.reviews.path}"><Reviews /></Route>
     <Route path="{Paths.aboutUs.path}"><AboutUs /></Route>
-    <Route path="{Paths.demolition.path}"><Demolition /></Route>
-    <Route path="{Paths.excavationAndGrading.path}">
-      <ExcavationAndGrading />
+    <Route path="{Paths.excavationAndDemolition.path}">
+      <ExcavationAndDemolition />
     </Route>
     <Route path="{Paths.landClearingAndForestry.path}">
       <LandClearingAndForestry />

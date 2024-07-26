@@ -1,17 +1,19 @@
 <script>
-  import gradingSunset from "../assets/gradingSunset.webp";
+  import excavatorWorking from "../assets/excavatorWorking.webp";
   import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import { Paths } from "../lib/constants";
   import ServiceSection from "../lib/ServiceSection.svelte";
-  import pathClearing from "../assets/pathClearing.webp";
-  import backyardTreeRowClearing from "../assets/backyardTreeRowClearing.webp";
+  import bobcatSunsetLifted from "../assets/bobcatSunsetLifted.webp";
 
   const applications = [
-    "Lot Clearing",
-    "Shelterbelt Removal",
-    "Site Prep Clearing",
+    "Forestry Mulching",
     "CRP Clearing",
+    "Shelterbelt Cleanout",
+    "Underbrush Clearing",
+    "Utility Right of way clearing",
+    "Lot Clearing",
+    "Site Preparation",
   ];
 
   const benefits = [
@@ -32,10 +34,10 @@
     label="{Paths.landClearingAndForestry.label}"
   />
   <ServiceSection
-    imageSource="{pathClearing}"
+    imageSource="{excavatorWorking}"
     imageLabel="{Paths.landClearingAndForestry.label}"
     subHeader="Land Clearing and Forestry"
-    header="Unlocking the potential of your land, one clearing at a time"
+    header="Unlocking the potential of your land"
     paragraph="Land Clearing is a labor intensive task that requires proper equipment
   and personnel. It is typically done in order to use land for a specific
   purpose such as farming, building development, or land management. Our
@@ -44,7 +46,7 @@
     right="{true}"
   />
   <ServiceSection
-    imageSource="{backyardTreeRowClearing}"
+    imageSource="{bobcatSunsetLifted}"
     imageLabel="{Paths.landClearingAndForestry.label}"
     subHeader="Land Clearing and Forestry"
     header="Clearing the way for your vision"

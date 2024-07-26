@@ -1,17 +1,16 @@
 <script>
   import treeBranchesGone from "../assets/treeBranchesGone.webp";
-  import treeServicePic from "../assets/tree-service-pic.webp";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
+  import largeStump from "../assets/large-stump.webp";
   import { Paths } from "../lib/constants";
   import ServiceSection from "../lib/ServiceSection.svelte";
-  import groundedBoom from "../assets/groundedBoom.webp";
+  import bobcatLog from "../assets/bobcat-log.webp";
 
   const applications = [
+    "Tree Removal",
     "Tree Trimming",
-    "Individual Tree Removal",
-    "Dead Tree Removal",
-    "Damaged Tree Removal",
-    "Tree Planting",
+    "Storm Cleanup",
+    "Stump Grinding",
   ];
 
   const benefits = [
@@ -26,7 +25,7 @@
 </svelte:head>
 
 <section class="">
-  <ServiceBanner src="{treeServicePic}" label="{Paths.treeService.label}" />
+  <ServiceBanner src="{largeStump}" label="{Paths.treeService.label}" />
   <ServiceSection
     imageSource="{treeBranchesGone}"
     imageLabel="{Paths.treeService.label}"
@@ -40,7 +39,7 @@
     right="{true}"
   />
   <ServiceSection
-    imageSource="{groundedBoom}"
+    imageSource="{bobcatLog}"
     imageLabel="{Paths.treeService.label}"
     subHeader="Tree Service"
     header="Expert tree care for healthy, beautiful landscapes"

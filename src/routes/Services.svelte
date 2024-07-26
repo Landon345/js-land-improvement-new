@@ -1,7 +1,7 @@
 <script lang="ts">
   import jonasStump from "../assets/jonasStump.webp";
   import demolitionPic from "../assets/demolition-pic.webp";
-  import excavationAndGradingPic from "../assets/excavation-and-grading-pic.webp";
+  import excavationAndDemolitionPic from "../assets/excavation-and-grading-pic.webp";
   import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
   import treeServicePic from "../assets/tree-service-pic.webp";
 
@@ -21,11 +21,11 @@
       linkto: "/demolition",
     },
     {
-      imgsrc: excavationAndGradingPic,
-      imgalt: "excavationAndGrading",
+      imgsrc: excavationAndDemolitionPic,
+      imgalt: "excavationAndDemolition",
       header: "Excavation and Grading",
       para: "We'll take care of all your excavation and grading needs",
-      linkto: "/excavation-and-grading",
+      linkto: "/excavation-and-demolition",
     },
     {
       imgsrc: landClearingAndForestry,

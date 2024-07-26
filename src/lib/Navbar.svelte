@@ -21,7 +21,7 @@
   };
   // https://gmoutdoorservices.com/
   // demolition.path
-  // excavation and excavationAndGrading.path
+  // excavation and excavationAndDemolition.path
   // land clearing and forestry
   // tree service
 </script>
@@ -70,8 +70,7 @@
                 on:click="{toggleServices}"
                 class="{`${
                   currentPage === Paths.treeService.path ||
-                  currentPage === Paths.demolition.path ||
-                  currentPage === Paths.excavationAndGrading.path ||
+                  currentPage === Paths.excavationAndDemolition.path ||
                   currentPage === Paths.landClearingAndForestry.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
@@ -86,24 +85,11 @@
                       use:link
                       on:click="{close}"
                       class="{`list-link ${
-                        currentPage === Paths.demolition.path
+                        currentPage === Paths.treeService.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.demolition.path}">{Paths.demolition.label}</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      use:link
-                      on:click="{close}"
-                      class="{`list-link ${
-                        currentPage === Paths.excavationAndGrading.path
-                          ? 'text-primary font-bold'
-                          : 'hover:text-primary'
-                      }`}"
-                      href="{Paths.excavationAndGrading.path}"
-                      >{Paths.excavationAndGrading.label}</a
+                      href="{Paths.treeService.path}">Tree Service</a
                     >
                   </li>
                   <li>
@@ -119,16 +105,18 @@
                       >Land Clearing</a
                     >
                   </li>
+
                   <li>
                     <a
                       use:link
                       on:click="{close}"
                       class="{`list-link ${
-                        currentPage === Paths.treeService.path
+                        currentPage === Paths.excavationAndDemolition.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.treeService.path}">Tree Service</a
+                      href="{Paths.excavationAndDemolition.path}"
+                      >{Paths.excavationAndDemolition.label}</a
                     >
                   </li>
                 </ul>
@@ -197,8 +185,7 @@
           on:click="{toggleServices}"
           class="{`${
             currentPage === Paths.treeService.path ||
-            currentPage === Paths.demolition.path ||
-            currentPage === Paths.excavationAndGrading.path ||
+            currentPage === Paths.excavationAndDemolition.path ||
             currentPage === Paths.landClearingAndForestry.path
               ? 'text-primary font-bold'
               : 'hover:text-primary'
@@ -217,24 +204,11 @@
                 use:link
                 on:click="{closeServices}"
                 class="{`list-link ${
-                  currentPage === Paths.demolition.path
+                  currentPage === Paths.treeService.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.demolition.path}">{Paths.demolition.label}</a
-              >
-            </li>
-            <li>
-              <a
-                use:link
-                on:click="{closeServices}"
-                class="{`list-link ${
-                  currentPage === Paths.excavationAndGrading.path
-                    ? 'text-primary font-bold'
-                    : 'hover:text-primary'
-                }`}"
-                href="{Paths.excavationAndGrading.path}"
-                >{Paths.excavationAndGrading.label}</a
+                href="{Paths.treeService.path}">{Paths.treeService.label}</a
               >
             </li>
             <li>
@@ -250,16 +224,18 @@
                 >{Paths.landClearingAndForestry.label}</a
               >
             </li>
+
             <li>
               <a
                 use:link
                 on:click="{closeServices}"
                 class="{`list-link ${
-                  currentPage === Paths.treeService.path
+                  currentPage === Paths.excavationAndDemolition.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.treeService.path}">{Paths.treeService.label}</a
+                href="{Paths.excavationAndDemolition.path}"
+                >{Paths.excavationAndDemolition.label}</a
               >
             </li>
           </ul>

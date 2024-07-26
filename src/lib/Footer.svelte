@@ -21,11 +21,8 @@
     <div class="hidden lg:flex lg:justify-between lg:w-full">
       <div class="flex flex-col justify-around mb-4">
         <h5 class="uppercase text-primary font-bold">Services</h5>
-        <a class="block" href="{Paths.demolition.path}">
-          {Paths.demolition.label}
-        </a>
-        <a class="block" href="{Paths.excavationAndGrading.path}">
-          {Paths.excavationAndGrading.label}
+        <a class="block" href="{Paths.excavationAndDemolition.path}">
+          {Paths.excavationAndDemolition.label}
         </a>
         <a class="block" href="{Paths.landClearingAndForestry.path}">
           {Paths.landClearingAndForestry.label}

@@ -1,6 +1,6 @@
 <script lang="ts">
   import jonasStump from "../assets/jonasStump.webp";
-  import demolitionPic from "../assets/demolition-pic.webp";
+  import { link } from "svelte-routing";
   import excavationAndDemolitionPic from "../assets/excavation-and-grading-pic.webp";
   import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
   import treeServicePic from "../assets/tree-service-pic.webp";
@@ -63,20 +63,22 @@
     {#each imgObjs as imgObj}
       <div class="flex h-[80px] w-full m-auto my-4 lg:hidden">
         <a
+          use:link
           class="flex flex-col uppercase font-bold text-xl p-10 text-center justify-center w-3/4 bg-primary text-primary-content"
           href="{imgObj.linkto}"
         >
           <p>{imgObj.header}</p>
         </a>
         <a
+          use:link
           class="flex justify-center items-center w-1/4 bg-neutral text-base-100"
-          href="/"
+          href="{imgObj.linkto}"
         >
           <i class="ri-arrow-right-circle-line text-4xl mr-4"></i>
         </a>
       </div>
       <div class="hidden lg:flex flex-col m-2 uppercase w-1/5">
-        <a href="{imgObj.linkto}">
+        <a use:link href="{imgObj.linkto}">
           <img
             class="w-full h-[300px]"
             src="{imgObj.imgsrc}"
@@ -88,7 +90,7 @@
         >
           <p class="text-lg xl:text-xl font-bold">{imgObj.header}</p>
         </div>
-        <a class="btn btn-primary rounded-none" href="{imgObj.linkto}">
+        <a use:link class="btn btn-primary rounded-none" href="{imgObj.linkto}">
           Learn More <i class="ri-arrow-right-circle-line text-lg ml-4"></i>
         </a>
       </div>
@@ -105,7 +107,7 @@
       that best fits your budget and pay in easy monthly installments rather
       than all at once upfront.
     </p>
-    <div class="flex justify-around my-10 uppercase">
+    <div class="flex flex-col justify-around my-10 uppercase sm:flex-row">
       <a
         class="btn btn-outline rounded-none px-10"
         href="https://wisetack.us/#/xmwgcs1/prequalify"

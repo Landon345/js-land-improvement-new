@@ -4,6 +4,7 @@
   import excavationAndDemolitionPic from "../assets/excavation-and-grading-pic.webp";
   import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
   import treeServicePic from "../assets/tree-service-pic.webp";
+  import { Paths } from "../lib/constants";
 
   interface ImgObj {
     imgsrc: string;
@@ -14,32 +15,25 @@
   }
   const imgObjs: ImgObj[] = [
     {
-      imgsrc: demolitionPic,
-      imgalt: "demolition",
-      header: "Demolition",
-      para: "Clearing structures and debris from your land",
-      linkto: "/demolition",
-    },
-    {
       imgsrc: excavationAndDemolitionPic,
       imgalt: "excavationAndDemolition",
-      header: "Excavation and Grading",
+      header: `${Paths.excavationAndDemolition.label}`,
       para: "We'll take care of all your excavation and grading needs",
-      linkto: "/excavation-and-demolition",
+      linkto: `${Paths.excavationAndDemolition.path}`,
     },
     {
       imgsrc: landClearingAndForestry,
       imgalt: "landClearingAndForestry",
-      header: "Land Clearing And Forestry",
+      header: `${Paths.landClearingAndForestry.label}`,
       para: "We can clear any size piece of land and suite it to your needs",
-      linkto: "/land-clearing-and-forestry",
+      linkto: `${Paths.landClearingAndForestry.path}`,
     },
     {
       imgsrc: treeServicePic,
       imgalt: "treeService",
-      header: "Tree Service",
+      header: `${Paths.treeService.label}`,
       para: "From felling large trees to maintaining your existing ones, we have you covered",
-      linkto: "/tree-service",
+      linkto: `${Paths.treeService.path}`,
     },
   ];
   const gettingStartedSteps = [

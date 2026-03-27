@@ -1,6 +1,5 @@
 <script lang="ts">
-  import bobcat from "../assets/bobcat.webp";
-  import jsTeamPic from "../assets/js-team-pic.webp";
+  import image11 from "../assets/Image_11.webp";
   import Reviews from "./Reviews.svelte";
 </script>
 
@@ -17,37 +16,34 @@
       <div class="mx-4 md:w-1/2 md:mx-10">
         <h3 class="text-center mt-0 pt-10">Our Story</h3>
         <p class="my-3 indent-8">
-          During Jonas's sophomore year of college in 2021 he decided to form
-          his own company "JS Land Improvement" with the help of his father
-          Scott. Jonas started out renting and borrowing equipment from friends
-          and family to complete projects related to brush clearing and forestry
-          mulching. Since the very beginning, client satisfaction and doing
-          quality work was the most important metric.
+          JS Land Improvement started in 2021 when Jonas Geston founded it
+          during his Sophomore year of college. In the early days, Jonas rented
+          and borrowed equipment to handle projects involving brush mowing,
+          forestry mulching, and some tree removals. Over the years, JS has
+          slowly grown by purchasing more equipment, hiring new employees, and
+          taking on larger land clearing and excavation projects. Since the very
+          beginning, client satisfaction and quality work have been the most
+          important metrics for JS Land Improvement.
         </p>
         <p class="my-3 indent-8">
-          Over the past 3 years, JS has grown into a more diverse company
-          serving North Dakota and Minnesota offering land clearing, forestry,
-          tree, excavation, and demolition services. JS Land Improvement
-          currently has six team members and is growing at a rapid pace.
+          JS Land Improvement services within a 2 hour radius of Fargo, ND and
+          occasionally travels further for large land clearing projects. They
+          primarily focus on shelterbelt removals, shelterbelt cleanouts, CRP
+          clearing, lot clearing, tree removals, excavation, site prep, and
+          demolition projects.
+        </p>
+        <h3 class="text-center pt-6">Our Mission</h3>
+        <p class="my-3 indent-8">
+          At JS Land Improvement, our mission is simple: treat every property
+          like it's our own. We take pride in our work, listen to your needs,
+          and won't leave until you're completely satisfied with the results.
         </p>
       </div>
       <img
-        class="object-cover min-h-[530px] max-h-[600px] md:w-1/2"
-        src="{jsTeamPic}"
-        alt="js-team-pic"
+        class="object-cover min-h-[530px] max-h-[700px] md:w-1/2"
+        src="{image11}"
+        alt="js-land-improvement-team"
       />
-    </div>
-    <div class="bg-base-100 md:flex">
-      <div class="mx-4 md:w-1/2 md:mx-10">
-        <h3 class="text-center pt-10">Our Mission</h3>
-        <p class="my-3 indent-8">
-          Our mission is to improve the value of our clients' land while
-          creating an amazing experience. We prioritize quality over quantity
-          and are committed to achieving excellence. Whether we are working for
-          you or with you, we promise to treat you as a human and not a number.
-        </p>
-      </div>
-      <img src="{bobcat}" alt="bobcat" class="md:w-1/2" />
     </div>
   </div>
   <Reviews />

@@ -1,10 +1,10 @@
 <script>
   import excavatorWorking from "../assets/excavatorWorking.webp";
-  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
+  import image7 from "../assets/Image_7.webp";
   import ServiceBanner from "../lib/ServiceBanner.svelte";
   import { Paths } from "../lib/constants";
   import ServiceSection from "../lib/ServiceSection.svelte";
-  import bobcatSunsetLifted from "../assets/bobcatSunsetLifted.webp";
+  import image8 from "../assets/Image_8.webp";
 
   const applications = [
     "Forestry Mulching",
@@ -30,13 +30,13 @@
 
 <section>
   <ServiceBanner
-    src="{landClearingAndForestry}"
+    src="{image7}"
     label="{Paths.landClearingAndForestry.label}"
   />
   <ServiceSection
     imageSource="{excavatorWorking}"
     imageLabel="{Paths.landClearingAndForestry.label}"
-    subHeader="Land Clearing and Forestry"
+    subHeader="Land Clearing and Forestry Mulching"
     header="Unlocking the potential of your land"
     paragraph="Land Clearing is a labor intensive task that requires proper equipment
   and personnel. It is typically done in order to use land for a specific
@@ -46,13 +46,13 @@
     right="{true}"
   />
   <ServiceSection
-    imageSource="{bobcatSunsetLifted}"
+    imageSource="{image8}"
     imageLabel="{Paths.landClearingAndForestry.label}"
-    subHeader="Land Clearing and Forestry"
+    subHeader="Land Clearing and Forestry Mulching"
     header="Clearing the way for your vision"
-    paragraph="At JS Land Improvement, we have the expertise and equipment 
-    to handle large-scale land clearing projects efficiently and safely. 
-    We utilize specialized machinery to remove trees and brush, leaving your 
+    paragraph="At JS Land Improvement, we have the expertise and equipment
+    to handle large-scale land clearing projects efficiently and safely.
+    We utilize specialized machinery to remove trees and brush, leaving your
     land ready for its next phase."
     bulletPoints="{benefits}"
     right="{false}"

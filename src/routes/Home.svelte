@@ -1,6 +1,5 @@
 <script lang="ts">
-  import jonasStump from "../assets/jonasStump.webp";
-  import jsTeamPic from "../assets/js-team-pic.webp";
+  import image1 from "../assets/Image_1.webp";
   import demolitionLoading from "../assets/demolitionLoading.webp";
   import pathCleared from "../assets/path-cleared.webp";
   import manNearStump from "../assets/man-near-stump.webp";
@@ -17,15 +16,15 @@
   const imgObjs: ImgObj[] = [
     {
       imgsrc: manNearStump,
-      imgalt: "treeService",
-      header: "Tree Service",
+      imgalt: "treeRemoval",
+      header: "Tree Removal",
       para: "From felling large trees to maintaining your existing ones, we have you covered",
-      linkto: "/tree-service",
+      linkto: "/tree-removal",
     },
     {
       imgsrc: pathCleared,
-      imgalt: "landClearingAndForestry",
-      header: "Land Clearing And Forestry",
+      imgalt: "landClearingAndForestryMulching",
+      header: "Land Clearing And Forestry Mulching",
       para: "We can clear any size piece of land and suite it to your needs",
       linkto: "/land-clearing-and-forestry",
     },
@@ -59,7 +58,7 @@
     id="introVideo"
     width="640px"
     height="400px"
-    src="https://www.youtube.com/embed/oZnHJS35pic?autoplay=1&controls=0&playlist=oZnHJS35pic&loop=1&disablekb=1&mute=1"
+    src="https://www.youtube.com/embed/EAq8Fh8zq4M?autoplay=1&controls=0&playlist=EAq8Fh8zq4M&loop=1&disablekb=1&mute=1"
     title="JS Land Improvement Intro Video"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -97,16 +96,16 @@
   </a>
 </section>
 <ServiceSection
-  imageSource="{jsTeamPic}"
+  imageSource="{image1}"
   imageLabel="js-team-pic"
   subHeader="Make it great"
   header="Working Together for Exceptional Results"
-  paragraph="Our mission at JS Land Improvement is to improve the value of our client's land while creating an amazing experience. We prioritize quality over quantity and are committed to achieving excellence. Wether we are working for you or with you, we promise to treat you as a human and not a number."
+  paragraph="At JS Land Improvement, our mission is simple: treat every property like it's our own. We take pride in our work, listen to what you need, and won't leave until you're completely satisfied with the results."
   bulletPoints="{[
-    '24 Hour Response Time',
     'Free Quotes',
-    'Specialized Equipment',
     'Satisfaction Guaranteed',
+    'Specialized Equipment',
+    'Fargo, ND & Surrounding Areas',
   ]}"
   right="{false}"
 />

@@ -27,8 +27,8 @@
         <a class="block" href="{Paths.landClearingAndForestry.path}">
           {Paths.landClearingAndForestry.label}
         </a>
-        <a class="block" href="{Paths.treeService.path}">
-          {Paths.treeService.label}
+        <a class="block" href="{Paths.treeRemoval.path}">
+          {Paths.treeRemoval.label}
         </a>
       </div>
       <div class="flex flex-col justify-around mb-4">
@@ -55,16 +55,18 @@
         <h5 class="uppercase text-primary font-bold">Address</h5>
         <p class="text-sm">{ADDRESS}</p>
         <div class="flex justify-center gap-5 items-center p-4 text-3xl">
-          <a href="https://www.facebook.com/JSLandImprovement" target="_blank">
+          <a aria-label="Facebook" href="https://www.facebook.com/JSLandImprovement" target="_blank">
             <i class="ri-facebook-fill text-primary"></i>
           </a>
           <a
+            aria-label="Instagram"
             href="https://www.instagram.com/js_land_improvement_/"
             target="_blank"
           >
             <i class="ri-instagram-fill text-primary"></i>
           </a>
           <a
+            aria-label="LinkedIn"
             href="https://www.linkedin.com/company/js-land-improvement/"
             target="_blank"
           >
@@ -82,16 +84,18 @@
       <p class="text-sm">{ADDRESS}</p>
       <!-- social media links -->
       <div class="flex justify-center gap-5 items-center p-4 text-3xl">
-        <a href="https://www.facebook.com/JSLandImprovement" target="_blank">
+        <a aria-label="Facebook" href="https://www.facebook.com/JSLandImprovement" target="_blank">
           <i class="ri-facebook-fill text-primary"></i>
         </a>
         <a
+          aria-label="Instagram"
           href="https://www.instagram.com/js_land_improvement_/"
           target="_blank"
         >
           <i class="ri-instagram-fill text-primary"></i>
         </a>
         <a
+          aria-label="LinkedIn"
           href="https://www.linkedin.com/company/js-land-improvement/"
           target="_blank"
         >

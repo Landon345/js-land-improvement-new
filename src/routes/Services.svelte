@@ -1,9 +1,9 @@
 <script lang="ts">
-  import jonasStump from "../assets/jonasStump.webp";
+  import image5 from "../assets/Image_5.webp";
   import { link } from "svelte-routing";
-  import excavationAndDemolitionPic from "../assets/excavation-and-grading-pic.webp";
-  import landClearingAndForestry from "../assets/land-clearing-and-forestry-pic.webp";
-  import treeServicePic from "../assets/tree-service-pic.webp";
+  import image2 from "../assets/Image_2.webp";
+  import image3 from "../assets/Image_3.webp";
+  import image4 from "../assets/Image_4.webp";
   import { Paths } from "../lib/constants";
 
   interface ImgObj {
@@ -15,25 +15,25 @@
   }
   const imgObjs: ImgObj[] = [
     {
-      imgsrc: excavationAndDemolitionPic,
+      imgsrc: image2,
       imgalt: "excavationAndDemolition",
       header: `${Paths.excavationAndDemolition.label}`,
       para: "We'll take care of all your excavation and grading needs",
       linkto: `${Paths.excavationAndDemolition.path}`,
     },
     {
-      imgsrc: landClearingAndForestry,
+      imgsrc: image3,
       imgalt: "landClearingAndForestry",
       header: `${Paths.landClearingAndForestry.label}`,
       para: "We can clear any size piece of land and suite it to your needs",
       linkto: `${Paths.landClearingAndForestry.path}`,
     },
     {
-      imgsrc: treeServicePic,
-      imgalt: "treeService",
-      header: `${Paths.treeService.label}`,
+      imgsrc: image4,
+      imgalt: "treeRemoval",
+      header: `${Paths.treeRemoval.label}`,
       para: "From felling large trees to maintaining your existing ones, we have you covered",
-      linkto: `${Paths.treeService.path}`,
+      linkto: `${Paths.treeRemoval.path}`,
     },
   ];
   const gettingStartedSteps = [
@@ -56,7 +56,7 @@
   <div class="text-center mb-6">
     <p class=" text-primary font-bold">WE'RE UP TO THE CHALLENGE</p>
     <h1 class="text-4xl mt-3 mb-4 uppercase font-bold">Our Services</h1>
-    <p class="">We have the equipment and expertise to handle any size job.</p>
+    <p class="">Serving North Dakota & Minnesota since 2021</p>
   </div>
   <!-- service Images -->
   <div class="lg:flex lg:justify-center lg:flex-wrap">
@@ -71,6 +71,7 @@
         </a>
         <a
           use:link
+          aria-label="View {imgObj.header}"
           class="flex justify-center items-center w-1/4 bg-neutral text-base-100"
           href="{imgObj.linkto}"
         >
@@ -148,19 +149,11 @@
       Tell us about your project
       <i class="ri-arrow-right-circle-line ml-4 text-lg"></i>
     </a>
-    <div class="relative">
-      <img
-        class="w-full h-[400px] object-cover"
-        src="{jonasStump}"
-        alt="jonas-stump"
-      />
-      <div
-        class="absolute bg-base-100 w-1/2 py-4 bottom-0 right-0 text-right pr-10"
-      >
-        <h3 class="text-primary m-0">Jonas</h3>
-        <p class="text-base-content">Owner</p>
-      </div>
-    </div>
+    <img
+      class="w-full h-[400px] object-cover"
+      src="{image5}"
+      alt="js-land-improvement"
+    />
   </div>
 </div>
 

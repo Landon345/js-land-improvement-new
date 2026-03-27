@@ -72,7 +72,7 @@
               <button
                 onclick={toggleServices}
                 class="{`${
-                  currentPage === Paths.treeService.path ||
+                  currentPage === Paths.treeRemoval.path ||
                   currentPage === Paths.excavationAndDemolition.path ||
                   currentPage === Paths.landClearingAndForestry.path
                     ? 'text-primary font-bold'
@@ -88,11 +88,11 @@
                       use:link
                       onclick={close}
                       class="{`list-link ${
-                        currentPage === Paths.treeService.path
+                        currentPage === Paths.treeRemoval.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.treeService.path}">Tree Service</a
+                      href="{Paths.treeRemoval.path}">Tree Removal</a
                     >
                   </li>
                   <li>
@@ -105,7 +105,7 @@
                           : 'hover:text-primary'
                       }`}"
                       href="{Paths.landClearingAndForestry.path}"
-                      >Land Clearing</a
+                      >Land Clearing And Forestry Mulching</a
                     >
                   </li>
 
@@ -187,7 +187,7 @@
         <button
           onclick={toggleServices}
           class="{`${
-            currentPage === Paths.treeService.path ||
+            currentPage === Paths.treeRemoval.path ||
             currentPage === Paths.excavationAndDemolition.path ||
             currentPage === Paths.landClearingAndForestry.path
               ? 'text-primary font-bold'
@@ -207,11 +207,11 @@
                 use:link
                 onclick={closeServices}
                 class="{`list-link ${
-                  currentPage === Paths.treeService.path
+                  currentPage === Paths.treeRemoval.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.treeService.path}">{Paths.treeService.label}</a
+                href="{Paths.treeRemoval.path}">{Paths.treeRemoval.label}</a
               >
             </li>
             <li>

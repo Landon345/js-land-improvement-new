@@ -28,10 +28,10 @@
       <img src="{Logo}" alt="logo" class="w-[75px] m-1 shadow-none" />
     </a>
     <div class="flex justify-center text-primary text-xl items-center">
-      <button data-set-theme="light" data-act-class="text-secondary">
+      <button aria-label="Switch to light theme" data-set-theme="light" data-act-class="text-secondary">
         <i class="ri-sun-line m-2"></i>
       </button>
-      <button data-set-theme="dark" data-act-class="text-secondary">
+      <button aria-label="Switch to dark theme" data-set-theme="dark" data-act-class="text-secondary">
         <i class="ri-moon-line m-2"></i>
       </button>
     </div>

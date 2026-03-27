@@ -32,19 +32,7 @@
   </div>
 </Router>
 
-<style lang="postcss">
-  :global(h1) {
-    @apply text-4xl font-bold my-2;
-  }
-  :global(h3) {
-    @apply text-2xl font-bold mb-2 lg:text-3xl;
-  }
-  :global(p) {
-    @apply text-lg;
-  }
-  :global(img) {
-    @apply w-full h-auto object-cover shadow-lg mx-auto;
-  }
+<style>
   :global(.radial) {
     background: radial-gradient(
       circle,

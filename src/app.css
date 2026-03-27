@@ -1,14 +1,79 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light, "dark --default", emerald;
+}
+
+/* Custom light theme */
+[data-theme="light"] {
+  --color-primary: #0c9249;
+  --color-primary-content: #ffffff;
+  --color-secondary: #035e7b;
+  --color-secondary-content: #ffffff;
+  --color-accent: #37cdbe;
+  --color-accent-content: #ffffff;
+  --color-neutral: #1a202c;
+  --color-neutral-content: #ffffff;
+  --color-base-100: #ffffff;
+  --color-base-200: #f1f1f2;
+  --color-base-300: #e9e9eb;
+  --color-base-content: #1a202c;
+  --color-info: #2094f3;
+  --color-success: #009485;
+  --color-warning: #ff9900;
+  --color-error: #ff5724;
+}
+
+/* Custom dark theme */
+[data-theme="dark"] {
+  --color-primary: #0c9249;
+  --color-primary-content: #ffffff;
+  --color-secondary: #035e7b;
+  --color-secondary-content: #ffffff;
+  --color-accent: #37cdbe;
+  --color-accent-content: #ffffff;
+  --color-neutral: #f2f2f2;
+  --color-neutral-content: #1a202c;
+  --color-base-100: #1a202c;
+  --color-base-200: #2d3748;
+  --color-base-300: #3a4558;
+  --color-base-content: #ffffff;
+  --color-info: #2094f3;
+  --color-success: #009485;
+  --color-warning: #ff9900;
+  --color-error: #ff5724;
+}
+
+/* Global element styles in @layer base so utility classes can override them */
+@layer base {
+  h1 { @apply text-4xl font-bold my-2; }
+  h3 { @apply text-2xl font-bold mb-2 lg:text-3xl; }
+  p { @apply text-lg; }
+  img { @apply w-full h-auto object-cover shadow-lg mx-auto; }
+}
+
 :root {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 500;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-* {
-  padding: 0;
-  margin: 0;
+/* Restore DaisyUI v4 button appearance */
+.btn {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+}
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+  box-shadow: none;
+}
+
+/* Restore DaisyUI v4 btn-outline — transparent bg, currentColor border & text */
+.btn-outline {
+  background-color: transparent;
+  border-color: currentColor;
+  color: currentColor;
+}
+.btn-outline:hover:not(:disabled) {
+  background-color: currentColor;
+  color: var(--color-base-100);
 }

@@ -165,6 +165,7 @@
 </div>
 
 <style lang="postcss">
+  @reference "../app.css";
   .list-number {
     @apply bg-primary text-primary-content my-2 mr-4 text-2xl h-[50px] w-[50px] flex justify-center items-center;
     background: linear-gradient(145deg, #0c9249, #035e7b);

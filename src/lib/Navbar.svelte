@@ -1,12 +1,20 @@
 <script lang="ts">
   import { link } from "svelte-routing";
-  import MediaQuery from "svelte-media-queries";
   import { slide } from "svelte/transition";
   import { Paths } from "./constants";
 
-  let navBarOpen = false;
-  let servicesOpen = false;
-  let currentPage = window.location.pathname;
+  let navBarOpen = $state(false);
+  let servicesOpen = $state(false);
+  let currentPage = $state(window.location.pathname);
+
+  const mql = window.matchMedia("(max-width: 1000px)");
+  let isMobile = $state(mql.matches);
+
+  $effect(() => {
+    const handler = (e: MediaQueryListEvent) => { isMobile = e.matches; };
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  });
 
   const close = () => {
     navBarOpen = false;
@@ -19,20 +27,15 @@
   const toggleServices = () => {
     servicesOpen = !servicesOpen;
   };
-  // https://gmoutdoorservices.com/
-  // demolition.path
-  // excavation and excavationAndDemolition.path
-  // land clearing and forestry
-  // tree service
 </script>
 
-<MediaQuery query="(max-width: 1000px)" let:matches>
-  {#if matches}
+{#if isMobile}
     <div>
       <button
         use:link
         class="m-1 text-primary"
-        on:click="{() => (navBarOpen = !navBarOpen)}"
+        aria-label="Toggle navigation menu"
+        onclick={() => (navBarOpen = !navBarOpen)}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,15 +62,15 @@
             <li>
               <a
                 use:link
-                on:click="{close}"
+                onclick={close}
                 class="{`${currentPage === Paths.home.path ? 'text-primary font-bold' : 'hover:text-primary'}`}"
                 href="{Paths.home.path}">{Paths.home.label}</a
               >
             </li>
             <li>
-              <!-- svelte-ignore a11y-invalid-attribute -->
+              <!-- svelte-ignore a11y_invalid_attribute -->
               <button
-                on:click="{toggleServices}"
+                onclick={toggleServices}
                 class="{`${
                   currentPage === Paths.treeService.path ||
                   currentPage === Paths.excavationAndDemolition.path ||
@@ -83,7 +86,7 @@
                   <li>
                     <a
                       use:link
-                      on:click="{close}"
+                      onclick={close}
                       class="{`list-link ${
                         currentPage === Paths.treeService.path
                           ? 'text-primary font-bold'
@@ -95,7 +98,7 @@
                   <li>
                     <a
                       use:link
-                      on:click="{close}"
+                      onclick={close}
                       class="{`list-link ${
                         currentPage === Paths.landClearingAndForestry.path
                           ? 'text-primary font-bold'
@@ -109,7 +112,7 @@
                   <li>
                     <a
                       use:link
-                      on:click="{close}"
+                      onclick={close}
                       class="{`list-link ${
                         currentPage === Paths.excavationAndDemolition.path
                           ? 'text-primary font-bold'
@@ -125,7 +128,7 @@
             <li>
               <a
                 use:link
-                on:click="{close}"
+                onclick={close}
                 class="{`list-link ${
                   currentPage === Paths.reviews.path
                     ? 'text-primary font-bold'
@@ -138,7 +141,7 @@
             <li>
               <a
                 use:link
-                on:click="{close}"
+                onclick={close}
                 class="{`list-link ${
                   currentPage === Paths.aboutUs.path
                     ? 'text-primary font-bold'
@@ -150,7 +153,7 @@
             <li>
               <a
                 use:link
-                on:click="{close}"
+                onclick={close}
                 href="{Paths.contactUs.path}"
                 class="{`contact-us ${
                   currentPage === Paths.contactUs.path
@@ -169,7 +172,7 @@
     <nav class="flex w-1/2 justify-around text-xl">
       <a
         use:link
-        on:click="{closeServices}"
+        onclick={closeServices}
         class="{`${
           currentPage === Paths.home.path
             ? 'text-primary font-bold'
@@ -180,9 +183,9 @@
         {Paths.home.label}
       </a>
       <div class="dropdown">
-        <!-- svelte-ignore a11y-invalid-attribute -->
+        <!-- svelte-ignore a11y_invalid_attribute -->
         <button
-          on:click="{toggleServices}"
+          onclick={toggleServices}
           class="{`${
             currentPage === Paths.treeService.path ||
             currentPage === Paths.excavationAndDemolition.path ||
@@ -202,7 +205,7 @@
             <li>
               <a
                 use:link
-                on:click="{closeServices}"
+                onclick={closeServices}
                 class="{`list-link ${
                   currentPage === Paths.treeService.path
                     ? 'text-primary font-bold'
@@ -214,7 +217,7 @@
             <li>
               <a
                 use:link
-                on:click="{closeServices}"
+                onclick={closeServices}
                 class="{`list-link ${
                   currentPage === Paths.landClearingAndForestry.path
                     ? 'text-primary font-bold'
@@ -228,7 +231,7 @@
             <li>
               <a
                 use:link
-                on:click="{closeServices}"
+                onclick={closeServices}
                 class="{`list-link ${
                   currentPage === Paths.excavationAndDemolition.path
                     ? 'text-primary font-bold'
@@ -243,7 +246,7 @@
       </div>
       <a
         use:link
-        on:click="{closeServices}"
+        onclick={closeServices}
         class="{`${
           currentPage === Paths.reviews.path
             ? 'text-primary font-bold'
@@ -255,7 +258,7 @@
       </a>
       <a
         use:link
-        on:click="{closeServices}"
+        onclick={closeServices}
         class="{`${
           currentPage === Paths.aboutUs.path
             ? 'text-primary font-bold'
@@ -267,7 +270,7 @@
       </a>
       <a
         use:link
-        on:click="{closeServices}"
+        onclick={closeServices}
         class="{`contact-us-desktop ${
           currentPage === Paths.contactUs.path
             ? 'text-primary font-bold'
@@ -278,5 +281,4 @@
         Contact Us
       </a>
     </nav>
-  {/if}
-</MediaQuery>
+{/if}

@@ -1,6 +1,7 @@
 <script>
   import Navbar from "./Navbar.svelte";
-  import Logo from "../assets/js-logo-bg-removed.webp";
+  import LogoLight from "../assets/js-logo-bg-removed.webp";
+  import LogoDark from "../assets/js-logo-bg-removed-dark.webp";
   import { onMount } from "svelte";
   import { themeChange } from "theme-change";
   import { PHONE_NUMBER, Paths } from "./constants";
@@ -25,7 +26,8 @@
     class="sticky top-0 flex justify-between items-center bg-base-100 z-10 border-b-2 border-primary"
   >
     <a href="{Paths.home.path}">
-      <img src="{Logo}" alt="logo" class="w-[75px] m-1 shadow-none" />
+      <img src="{LogoLight}" alt="logo" class="w-[75px] m-1 shadow-none dark:hidden" />
+      <img src="{LogoDark}" alt="logo" class="w-[75px] m-1 shadow-none hidden dark:block" />
     </a>
     <div class="flex justify-center text-primary text-xl items-center">
       <button aria-label="Switch to light theme" data-set-theme="light" data-act-class="text-secondary">

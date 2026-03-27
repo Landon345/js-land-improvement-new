@@ -1,6 +1,7 @@
 <script lang="ts">
   import { PHONE_NUMBER, EMAIL, ADDRESS, Paths } from "./constants";
-  import logo from "../assets/js-logo-bg-removed.webp";
+  import logoLight from "../assets/js-logo-bg-removed.webp";
+  import logoDark from "../assets/js-logo-bg-removed-dark.webp";
   const year = new Date().getFullYear();
 
   const format = (phone: string) => {
@@ -13,7 +14,8 @@
 >
   <div class="lg:flex">
     <div class="mr-10">
-      <img src="{logo}" alt="logo" class="w-1/5 lg:w-1/2 shadow-none" />
+      <img src="{logoLight}" alt="logo" class="w-1/5 lg:w-1/2 shadow-none dark:hidden" />
+      <img src="{logoDark}" alt="logo" class="w-1/5 lg:w-1/2 shadow-none hidden dark:block" />
       <p class="hidden text-sm lg:block w-1/2 mx-auto py-3">
         JS Land Improvement is locally owned and operated.
       </p>

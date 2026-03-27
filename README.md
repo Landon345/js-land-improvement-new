@@ -1,47 +1,67 @@
-# Svelte + TS + Vite
+# JS Land Improvement — Website
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+Marketing website for **JS Land Improvement**, a land clearing, tree removal, excavation, and demolition company based in Fargo, ND.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- [Svelte 5](https://svelte.dev/) — UI framework (uses runes: `$state`, `$effect`)
+- [Vite 8](https://vite.dev/) — build tool and dev server
+- [Tailwind CSS 4](https://tailwindcss.com/) — utility-first CSS
+- [DaisyUI 5](https://daisyui.com/) — component library (light/dark themes via `theme-change`)
+- [svelte-routing](https://github.com/EmilTholin/svelte-routing) — client-side routing
+- TypeScript 6
 
-## Need an official Svelte framework?
+## Pages
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+| Route | Component | Description |
+|---|---|---|
+| `/` | `Home.svelte` | Hero video, mission statement, services overview |
+| `/services` | `Services.svelte` | Service cards, financing info, getting started steps |
+| `/tree-removal` | `TreeRemoval.svelte` | Tree removal service page |
+| `/land-clearing-and-forestry-mulching` | `LandClearingAndForestryMulching.svelte` | Land clearing & forestry mulching service page |
+| `/excavation-and-demolition` | `ExcavationAndDemolition.svelte` | Excavation & demolition service page |
+| `/about-us` | `AboutUs.svelte` | Company story, mission, reviews |
+| `/reviews` | `Reviews.svelte` | Customer reviews |
+| `/contact-us` | `ContactUs.svelte` | Jobber-embedded contact form |
 
-## Technical considerations
+## Getting Started
 
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```bash
+npm install
+npm run dev
 ```
+
+## Available Scripts
+
+| Script | Description |
+|---|---|
+| `npm run dev` | Start dev server at `http://localhost:5173` |
+| `npm run build` | Build for production (output to `dist/`) |
+| `npm run preview` | Preview the production build locally |
+| `npm run check` | Run Svelte type-checking |
+
+## Project Structure
+
+```
+src/
+├── App.svelte          # Root component — router, image prefetching
+├── main.ts             # Entry point
+├── app.css             # Global styles, Tailwind config, DaisyUI theme overrides
+├── assets/             # Images (webp)
+├── lib/
+│   ├── constants.ts    # Route paths, labels, contact info
+│   ├── Header.svelte
+│   ├── Footer.svelte
+│   ├── Navbar.svelte
+│   ├── ServiceBanner.svelte
+│   └── ServiceSection.svelte
+└── routes/             # One file per page
+```
+
+## Themes
+
+Light and dark themes are supported via DaisyUI 5 + `theme-change`. Dark is the default. Brand colors are defined in `app.css` under `[data-theme="light"]` and `[data-theme="dark"]`.
+
+## Deployment
+
+Running `npm run build` produces a static site in `dist/`. Deploy the contents of `dist/` to any static host (Netlify, Vercel, S3, etc.).

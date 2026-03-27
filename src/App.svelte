@@ -6,7 +6,7 @@
   import Footer from "./lib/Footer.svelte";
   import AboutUs from "./routes/AboutUs.svelte";
   import ExcavationAndDemolition from "./routes/ExcavationAndDemolition.svelte";
-  import LandClearingAndForestry from "./routes/LandClearingAndForestry.svelte";
+  import LandClearingAndForestryMulching from "./routes/LandClearingAndForestryMulching.svelte";
   import TreeRemoval from "./routes/TreeRemoval.svelte";
   import { Paths } from "./lib/constants";
   import ContactUs from "./routes/ContactUs.svelte";
@@ -58,8 +58,8 @@
     <Route path="{Paths.excavationAndDemolition.path}">
       <ExcavationAndDemolition />
     </Route>
-    <Route path="{Paths.landClearingAndForestry.path}">
-      <LandClearingAndForestry />
+    <Route path="{Paths.landClearingAndForestryMulching.path}">
+      <LandClearingAndForestryMulching />
     </Route>
     <Route path="{Paths.treeRemoval.path}"><TreeRemoval /></Route>
     <Route path="{Paths.home.path}"><Home /></Route>

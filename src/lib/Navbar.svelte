@@ -74,7 +74,7 @@
                 class="{`${
                   currentPage === Paths.treeRemoval.path ||
                   currentPage === Paths.excavationAndDemolition.path ||
-                  currentPage === Paths.landClearingAndForestry.path
+                  currentPage === Paths.landClearingAndForestryMulching.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 } ${servicesOpen ? 'text-primary' : ''}`}"
@@ -100,11 +100,11 @@
                       use:link
                       onclick={close}
                       class="{`list-link ${
-                        currentPage === Paths.landClearingAndForestry.path
+                        currentPage === Paths.landClearingAndForestryMulching.path
                           ? 'text-primary font-bold'
                           : 'hover:text-primary'
                       }`}"
-                      href="{Paths.landClearingAndForestry.path}"
+                      href="{Paths.landClearingAndForestryMulching.path}"
                       >Land Clearing And Forestry Mulching</a
                     >
                   </li>
@@ -189,7 +189,7 @@
           class="{`${
             currentPage === Paths.treeRemoval.path ||
             currentPage === Paths.excavationAndDemolition.path ||
-            currentPage === Paths.landClearingAndForestry.path
+            currentPage === Paths.landClearingAndForestryMulching.path
               ? 'text-primary font-bold'
               : 'hover:text-primary'
           }`}"
@@ -219,12 +219,12 @@
                 use:link
                 onclick={closeServices}
                 class="{`list-link ${
-                  currentPage === Paths.landClearingAndForestry.path
+                  currentPage === Paths.landClearingAndForestryMulching.path
                     ? 'text-primary font-bold'
                     : 'hover:text-primary'
                 }`}"
-                href="{Paths.landClearingAndForestry.path}"
-                >{Paths.landClearingAndForestry.label}</a
+                href="{Paths.landClearingAndForestryMulching.path}"
+                >{Paths.landClearingAndForestryMulching.label}</a
               >
             </li>
 

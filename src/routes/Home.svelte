@@ -26,7 +26,7 @@
       imgalt: "landClearingAndForestryMulching",
       header: "Land Clearing And Forestry Mulching",
       para: "We can clear any size piece of land and suite it to your needs",
-      linkto: "/land-clearing-and-forestry",
+      linkto: "/land-clearing-and-forestry-mulching",
     },
     {
       imgsrc: demolitionLoading,
@@ -52,7 +52,7 @@
   <title>Home | JS Land Improvement</title>
 </svelte:head>
 
-<div class="hidden lg:block relative pb-[56.25%] h-0">
+<div class="block relative pb-[56.25%] h-0">
   <iframe
     class="intro-video-embed w-full h-full"
     id="introVideo"

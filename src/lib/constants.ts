@@ -23,8 +23,8 @@ export const Paths = {
     path: "/excavation-and-demolition",
     label: "Excavation and Demolition",
   },
-  landClearingAndForestry: {
-    path: "/land-clearing-and-forestry",
+  landClearingAndForestryMulching: {
+    path: "/land-clearing-and-forestry-mulching",
     label: "Land Clearing and Forestry Mulching",
   },
   treeRemoval: {

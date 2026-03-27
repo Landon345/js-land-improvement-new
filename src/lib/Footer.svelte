@@ -24,8 +24,8 @@
         <a class="block" href="{Paths.excavationAndDemolition.path}">
           {Paths.excavationAndDemolition.label}
         </a>
-        <a class="block" href="{Paths.landClearingAndForestry.path}">
-          {Paths.landClearingAndForestry.label}
+        <a class="block" href="{Paths.landClearingAndForestryMulching.path}">
+          {Paths.landClearingAndForestryMulching.label}
         </a>
         <a class="block" href="{Paths.treeRemoval.path}">
           {Paths.treeRemoval.label}

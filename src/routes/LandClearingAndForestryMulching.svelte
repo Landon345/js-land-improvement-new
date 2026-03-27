@@ -25,17 +25,17 @@
 </script>
 
 <svelte:head>
-  <title>{Paths.landClearingAndForestry.label} | JS Land Improvement</title>
+  <title>{Paths.landClearingAndForestryMulching.label} | JS Land Improvement</title>
 </svelte:head>
 
 <section>
   <ServiceBanner
     src="{image7}"
-    label="{Paths.landClearingAndForestry.label}"
+    label="{Paths.landClearingAndForestryMulching.label}"
   />
   <ServiceSection
     imageSource="{excavatorWorking}"
-    imageLabel="{Paths.landClearingAndForestry.label}"
+    imageLabel="{Paths.landClearingAndForestryMulching.label}"
     subHeader="Land Clearing and Forestry Mulching"
     header="Unlocking the potential of your land"
     paragraph="Land Clearing is a labor intensive task that requires proper equipment
@@ -47,7 +47,7 @@
   />
   <ServiceSection
     imageSource="{image8}"
-    imageLabel="{Paths.landClearingAndForestry.label}"
+    imageLabel="{Paths.landClearingAndForestryMulching.label}"
     subHeader="Land Clearing and Forestry Mulching"
     header="Clearing the way for your vision"
     paragraph="At JS Land Improvement, we have the expertise and equipment

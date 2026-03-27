@@ -24,9 +24,9 @@
     {
       imgsrc: image3,
       imgalt: "landClearingAndForestry",
-      header: `${Paths.landClearingAndForestry.label}`,
+      header: `${Paths.landClearingAndForestryMulching.label}`,
       para: "We can clear any size piece of land and suite it to your needs",
-      linkto: `${Paths.landClearingAndForestry.path}`,
+      linkto: `${Paths.landClearingAndForestryMulching.path}`,
     },
     {
       imgsrc: image4,

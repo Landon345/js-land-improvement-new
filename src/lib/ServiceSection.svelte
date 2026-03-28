@@ -17,9 +17,9 @@
     />
     <a
       class="btn btn-primary rounded-none absolute bottom-0 right-0 bg-primary text-primary-content text-sm h-[100px] px-10 flex items-center font-bold uppercase"
-      href="/about-us"
+      href="/contact-us"
     >
-      Learn more <i class="ri-arrow-right-circle-line text-xl ml-2"></i>
+      Get A Quote <i class="ri-arrow-right-circle-line text-xl ml-2"></i>
     </a>
   </div>
   <div class="p-[50px] h-min">

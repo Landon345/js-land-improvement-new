@@ -48,6 +48,8 @@
   <link rel="prefetch" as="image" href={treeBranchesGone} />
   <link rel="prefetch" as="image" href={pathCleared} />
   <link rel="prefetch" as="image" href={manNearStump} />
+  <link rel="prefetch" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" as="script" crossorigin />
+  <link rel="prefetch" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" as="style" crossorigin />
 </svelte:head>
 
 <Router>
